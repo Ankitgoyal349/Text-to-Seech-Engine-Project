@@ -1,6 +1,51 @@
 /* Existing styles from the previous CSS */
 
 /* Login Section */
+.navbar {
+    background-color: #222;
+    color: #fff;
+    padding: 1em 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 2em;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 0.5em 1em;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #575757;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 1em;
+    }
+}
 .login-section {
     display: flex;
     justify-content: center;
@@ -11,11 +56,12 @@
 
 .login-container {
     background-color: #fff;
-    padding: 2em;
+    padding: 4em;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 500px;
     text-align: center;
+    height: 500px;
 }
 
 .login-container h2 {
