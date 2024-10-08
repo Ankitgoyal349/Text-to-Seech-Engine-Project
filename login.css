@@ -1,22 +1,44 @@
-/* Existing styles from the previous CSS */
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* Login Section */
 .navbar {
     background-color: #222;
-    color: #fff;
-    padding: 1em 5%;
+    color: #ebe2e2;
+    padding: 2em 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: sticky;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-style: normal;
     top: 0;
     z-index: 1000;
 }
+
+.navbar .sp{
+    font-size: 1.8em;
+    border: 5px;
+    color: #ff6200;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
 
 .logo {
     font-size: 1.8em;
     font-weight: bold;
     letter-spacing: 1px;
+    font-family: "Poppins", sans-serif;
+    /* font-weight: 100; */
+    font-style: normal;
 }
 
 .nav-links {
@@ -38,6 +60,7 @@
 
 .nav-links a:hover {
     background-color: #575757;
+    text-decoration: underline;
 }
 
 @media (max-width: 768px) {
@@ -51,7 +74,13 @@
     justify-content: center;
     align-items: center;
     height: 80vh;
-    background-color: #f4f4f4;
+    background-color: #bdb5b78b;
+}
+
+.login-section h2{
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-style: normal;
 }
 
 .login-container {
@@ -61,8 +90,21 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 500px;
     text-align: center;
-    height: 500px;
+    height: 600px;
 }
+
+.login-container .a{
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.login-container a{
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
 
 .login-container h2 {
     margin-bottom: 1.5em;
@@ -92,6 +134,9 @@
     background-color: #ff6200;
     color: #fff;
     font-size: 1em;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -99,10 +144,33 @@
 }
 
 .login-container .btn:hover {
-    background-color: #e55500;
+    background-color: #d15e16;
 }
 
 .login-container p {
     margin-top: 1em;
     color: #555;
 }
+
+footer {
+    text-align: center;
+    background-color: #000000;
+    color: white;
+    padding: 1.5em 5%;
+    position: relative;
+    margin-top: 20px;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .team-section {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* .footer p {
+    margin-top: 0px;
+} */

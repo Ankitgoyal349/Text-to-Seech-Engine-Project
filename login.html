@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Text-to-Speech Engine</title>
     <link rel="stylesheet" href="login.css">
-    <link rel="stylesheet" href="navbar.html">
+    <!-- <link rel="stylesheet" href="navbar.html"> -->
+
+
 </head>
 <body>
     <nav class="navbar">
-        <div class="logo">Speechify</div>
+        <a href="Text-to-speech.html" class="sp">Speechify</a>
         <ul class="nav-links">
             <li><a href="Home.html">Home</a></li>
             <li><a href="Text-to-speech.html">Text-to-Speech</a></li>
@@ -19,31 +21,20 @@
         </ul>
     </nav>
 
-    <!-- Navbar (Optional, if you want to keep the same navbar on the login page) -->
-    <nav class="navbar">
-        <!-- <div class="logo">TTS Engine</div>
-        <ul class="nav-links">
-            <li><a href="navbar.html">Home</a></li>
-            <li><a href="text-to-speech.html">Text-to-Speech</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="settings.html">Settings</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul> -->
-    </nav>
-
     <!-- Login Form Section -->
     <section class="login-section">
         <div class="login-container">
             <h2>Login to Your Account</h2>
             <form action="dashboard.html" method="post">
-                <label for="username">Username</label>
+                <label for="username"  class="a">Username</label>
                 <input type="text" id="username" name="username" required>
                 
-                <label for="password">Password</label>
+                <label for="password"  class="a">Password</label>
                 <input type="password" id="password" name="password" required>
                 
-                <button type="submit" class="btn" >Login</button>
-                <link class="btn" href="Text-to-speech.html">
+                <button type="submit" class="btn">Login </button>
+                
+                <!-- <link class="btn" href="Text-to-speech.html"> -->
             </form>
             <p>Don't have an account? <a href="register.html">Sign up</a></p>
         </div>
@@ -53,6 +44,7 @@
     <footer class="footer">
         <p>&copy; 2024 Text-to-Speech Engine. All rights reserved.</p>
     </footer>
+
 
 </body>
 </html>
