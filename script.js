@@ -15,6 +15,11 @@ let speech =new SpeechSynthesisUtterance();
 //         speech.voice=voices[voiceSelect.value];
 // });
 
+const logo=document.getElementById('logo');
+logo.addEventListener('click',function(){
+    window.location.href='Home.html';
+})
+
 document.querySelector("button").addEventListener("click",()=>{
     speech.text=document.querySelector("textarea").value;
 

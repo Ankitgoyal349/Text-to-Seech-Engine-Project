@@ -5,17 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Speechify</title>
     <link rel="stylesheet" href="Texttospeech.css">
+
+    <!--  favicon -->
+    <link rel="icon" href="favicon_16x16.png" id="favion">
 </head>
 <body>
     <!-- Navbar -->
     <nav class="navbar">
-        <a href="Text-to-speech.html" class="sp">Speechify</a>
+
+        <a href="Home.html">
+            <img src="speech.jpeg" alt="Speechify Logo" id="logo">
+        </a>
+        
         <ul class="nav-links">
             <li><a href="Home.html">Home</a></li>
             <li><a href="text-to-speech.html">Text-to-Speech</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="settings.html">Settings</a></li>
             <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">sign-up</a></li>
         </ul>
     </nav>
         <!-- Techniques -->
@@ -25,6 +32,10 @@
             <h3>Write your text! </h3>
             <textarea class="txtin"  placeholder="Enter text here...">
             </textarea>
+
+            <div class="row">
+                
+            </div>
             
             
         </div>
@@ -35,7 +46,7 @@
         <div class="photoupload">
             <h3>Upload text picture!</h3>
             <input class="imagein" type="file" accept="image/*" />
-        </div>
+        </div> 
         <div class="speechify"><button class="speechifybtn">Speechify</button></div>
 
     </section>

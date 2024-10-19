@@ -31,6 +31,11 @@ body {
     z-index: 1000;
 }
 
+.navbar img{
+    width: 300px;
+    height: 50px;
+}
+
 .navbar .sp{
     font-size: 1.8em;
     border: 5px;
@@ -124,7 +129,10 @@ body {
     
 }
 
-
+textarea::placeholder{
+    font-size: 16px;
+    color: #ddd;
+}
 
 .speechifybtn{
     background-color: #ff6200;
@@ -155,4 +163,21 @@ footer {
 
 select{
     flex: 1;
+}
+
+.row{
+    width: 600px;
+    display: flex;
+    align-items: center;
+}
+
+select{
+    flex: 1;
+    color: #fff;
+    background: #403d84;
+    height: 50px;
+    padding: 0 20px;
+    outline: 0;
+    border: 0;
+    border-radius: 35px;
 }
