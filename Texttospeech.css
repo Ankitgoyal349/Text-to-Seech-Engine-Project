@@ -128,22 +128,6 @@ body {
 }
 
 
-
-.speechifybtn {
-    background-color: #ff6200;
-    font-size: 2.2em;
-    font: bold;
-    color: #fff;
-    padding: 0.5em 1em;
-    border-radius: 10px;
-    margin-top: 0.5em;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.speechifybtn:hover {
-    background-color: #e55900;
-}
 .Techniques h3{
     font-size: 2.2em;
 }
@@ -168,5 +152,58 @@ footer {
     position: relative;
     margin-top: 20px;
     bottom: 0;
-    width: 100%;
+    width: 90%;
 }
+
+/* ... existing CSS code ... */
+
+#downloadButton {
+    padding: 10px 20px;
+    background-color: #2ecc71; /* Green color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px; /* Add a small margin to separate it from the Convert button */
+    font-family: "Poppins", sans-serif; /* Inherit font from body */
+}
+
+#downloadButton:hover {
+    background-color: #27ae60; /* Darker green on hover */
+}
+
+.speechify-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  #speechifyButton {
+    padding: 10px 20px;
+    background-color: orange; /* Green color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif; /* Inherit font from body */
+  }
+  
+  #speechifyButton:hover {
+    background-color: darkorange; /* Darker green on hover */
+  }
+  
+  #downloadButton {
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px; /* Add a small margin to separate it from the Convert button */
+    font-family: "Poppins", sans-serif; /* Inherit font from body */
+  }
+  
+  #downloadButton:hover {
+    background-color: #0062cc; /* Darker blue on hover */
+  }
+  

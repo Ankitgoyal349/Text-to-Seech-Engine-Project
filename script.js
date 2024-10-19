@@ -1,27 +1,65 @@
-let speech =new SpeechSynthesisUtterance();
+const textInput = document.getElementById('textInput');
+const fileInput = document.getElementById('fileInput');
+const imageInput = document.getElementById('imageInput');
+const speechifyButton = document.getElementById('speechifyButton');
 
-// let voices=[];
+const output = document.getElementById('output');
 
-// let voiceSelect=document.querySelector("option");
+const synth = window.speechSynthesis;
+let voices = [];
 
-// window.speechSynthesis.onvoiceschanged=()=>{
-//     voices=window.speechSynthesis.getVoices();
-//     speech.voice=voices[0];
+function loadVoices() {
+  voices = synth.getVoices();
+  if (voices.length === 0) {
+    setTimeout(loadVoices, 100);
+  }
+}
 
-//     voices.forEach((voice,i)=>(voiceSelect.options[i] = new option(voice.name,i)))
-// };
+loadVoices();
 
-// voiceSelect.addEventListener("change",()=>{
-//         speech.voice=voices[voiceSelect.value];
-// });
+function speak(text) {
+  if (!synth.speaking) { // Check if speech synthesis is not already in progress
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.voice = voices[0]; // You can set the voice here based on user preference
+    utterance.rate = 1.0; // Adjust the speaking rate as needed
+    utterance.pitch = 1.0; // Adjust the pitch as needed
 
-const logo=document.getElementById('logo');
-logo.addEventListener('click',function(){
-    window.location.href='Home.html';
-})
+    synth.speak(utterance);
+  }
+}
 
-document.querySelector("button").addEventListener("click",()=>{
-    speech.text=document.querySelector("textarea").value;
+function handleTextUpload() {
+  const textToSpeak = textInput.value;
+  if (textToSpeak) {
+    speak(textToSpeak);
+  }
+}
 
-    window.speechSynthesis.speak(speech);
-});
+function handleFileUpload(file) {
+  const reader = new FileReader();
+  reader.onload = (event) => {
+    const fileText = event.target.result;
+    speak(fileText);
+  };
+  reader.readAsText(file);
+}
+
+function handleImageUpload(file) {
+  const reader = new FileReader();
+  reader.onload = (event) => {
+    const imageData = event.target.result;
+    // Use an OCR library to extract text from the image
+    // Replace 'yourOCRlibrary' with the actual OCR library you're using
+    yourOCRlibrary.extractTextFromImage(imageData).then((text) => {
+      speak(text);
+    }).catch((error) => {
+      console.error('Error extracting text from image:', error);
+    });
+  };
+  reader.readAsDataURL(file);
+}
+
+textInput.addEventListener('input', handleTextUpload);
+fileInput.addEventListener('change', (event) => handleFileUpload(event.target.files[0]));
+imageInput.addEventListener('change', (event) => handleImageUpload(event.target.files[0]));
+speechifyButton.addEventListener('click', handleTextUpload);

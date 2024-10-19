@@ -199,20 +199,25 @@ body {
 
 
 
-.footer a{
+
+.ftr a{
     color: #de7c31;
     text-decoration: solid;
     font-family: "Poppins", sans-serif;
     font-weight: bold;
     font-style: calc();
     font-optical-sizing: auto;
-}
+} 
 
-.footer p{
+.ftr p{
     color: #b1cae3;
+    margin-top: 20px;
 }
     
 
-.footer a:hover {
+.ftr a:hover {
     text-decoration: underline;
 }
+
+
+

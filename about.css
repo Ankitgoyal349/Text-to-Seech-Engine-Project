@@ -215,7 +215,7 @@ footer {
     position: relative;
     margin-top: 20px;
     bottom: 0;
-    width: 100%;
+    width: 90%;
 }
 
 /* Responsive */
@@ -225,3 +225,4 @@ footer {
         align-items: center;
     }
 }
+
