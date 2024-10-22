@@ -11,10 +11,12 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: lightcyan;
+}
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #dbe2e2b8;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,7 +104,9 @@ body {
 /* Container */
 .container {
     padding: 50px;
-    border-radius: 10px;
+    border-radius: 30px;
+    border: 5px;
+    background-color: rgb(255, 255, 255);
     box-shadow: 0 5px 10px rgba(24, 5, 5, 0.1);
     width: 130%;
     max-width: 500px;

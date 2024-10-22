@@ -13,7 +13,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     color: #333;
-    background-color: #f9f9f9;
+    background-color: lightcyan;
 }
 
 .navbar {
@@ -176,9 +176,9 @@ footer {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
-  }
-  
-  #speechifyButton {
+}
+
+#speechifyButton {
     padding: 10px 20px;
     background-color: orange; /* Green color */
     color: white;
@@ -186,13 +186,13 @@ footer {
     border-radius: 5px;
     cursor: pointer;
     font-family: "Poppins", sans-serif; /* Inherit font from body */
-  }
-  
-  #speechifyButton:hover {
+}
+
+#speechifyButton:hover {
     background-color: darkorange; /* Darker green on hover */
-  }
-  
-  #downloadButton {
+}
+
+#downloadButton {
     padding: 10px 20px;
     background-color: #007bff; /* Blue color */
     color: white;
@@ -201,9 +201,24 @@ footer {
     cursor: pointer;
     margin-left: 10px; /* Add a small margin to separate it from the Convert button */
     font-family: "Poppins", sans-serif; /* Inherit font from body */
-  }
-  
-  #downloadButton:hover {
+}
+
+#downloadButton:hover {
     background-color: #0062cc; /* Darker blue on hover */
-  }
-  
+}
+
+
+#stopButton{
+    padding: 10px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-family: "poppins",sans-serif;
+}
+
+#stopButton:hover {
+    background-color: darkorange;
+}

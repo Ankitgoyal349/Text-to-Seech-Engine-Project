@@ -253,16 +253,16 @@ body {
 }
 
 .footer {
-    background-color: #222; /* Dark background color */
-    color: #fff; /* White text color */
-    text-align: center; /* Center the text */
-    padding: 1em 5%; /* Add padding for spacing */
-    position: relative; /* Position relative for potential adjustments */
-    bottom: 0; /* Position at the bottom of the viewport */
-    margin-top: 20px; /* Add a small top margin for spacing */
-    width: 90%; /* Ensure the footer spans the full width */
+    background-color: #222;
+    color: #fff; 
+    text-align: center; 
+    padding: 1em 5%; 
+    position: relative; 
+    bottom: 0; 
+    margin-top: 20px; 
+    width: 90%; 
 }
 
 .footer p {
-        margin-top: 20px; /* Add a small top margin for spacing */
+        margin-top: 20px; 
 }
