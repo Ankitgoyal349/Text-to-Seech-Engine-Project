@@ -104,8 +104,8 @@ body {
 /* Container */
 .container {
     padding: 50px;
-    border-radius: 30px;
-    border: 5px;
+    border-radius: 5px;
+    border: 1px ;
     background-color: rgb(255, 255, 255);
     box-shadow: 0 5px 10px rgba(24, 5, 5, 0.1);
     width: 130%;

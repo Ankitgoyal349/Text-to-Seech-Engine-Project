@@ -1,20 +1,23 @@
-document.getElementById("login").addEventListener("click", function(event) {
-    event.preventDefault(); // Prevent the form from submitting automatically
+// login.js
 
-    const username = document.getElementById("username").value;
-    const password = document.getElementById("password").value;
+document.querySelector("form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevents the form from submitting the usual way
 
-    // Hardcoded validation - replace with actual logic
-    if (username === "admin" && password === "password123") {
-        // If username and password match, redirect to the Text-to-Speech page
-        window.location.href = "Text-to-speech.html";
-    } else {
-        // If credentials are incorrect, show an error message
-        alert("Invalid username or password. Please try again.");
+    // Get the username and password field values
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+
+    // Simple validation (you can extend this with server-side authentication)
+    if (username === "" || password === "") {
+        alert("Please enter both username and password!");
+        return;
     }
 
-    // const button=document.getElementById('login');
-    // button.addEventListener('click',()=>{
-    //     window.location.href="Text-To-speech.html";
-    // })
+    // For demonstration purposes, this will check for hardcoded credentials (you can replace this with an actual server check)
+    if (username === "admin" && password === "admin123") {
+        alert("Login successful!");
+        window.location.href = "Text-to-speech.html"; // Redirect to dashboard page after successful login
+    } else {
+        alert("Invalid username or password!");
+    }
 });
