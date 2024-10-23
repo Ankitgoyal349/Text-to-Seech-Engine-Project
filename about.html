@@ -16,6 +16,12 @@
             <a href="Home.html">
                 <img src="images/speech.jpeg" alt="Speechify Logo" id="logo">
             </a>
+
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
             
             <ul class="nav-links">
                 <li><a href="Home.html">Home</a></li>
@@ -88,6 +94,13 @@
     <footer>
         <p>&copy; 2024 Text-to-Speech Converter. All rights reserved.</p>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('show');
+        }
+    </script>
 </body>
 </html>
 
