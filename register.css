@@ -26,7 +26,7 @@ body {
 
 .navbar img {
     width: 300px;
-    height: 50px;
+    height: auto; /* Maintain aspect ratio */
 }
 
 .nav-links {
@@ -53,34 +53,6 @@ body {
 
 .hamburger {
     display: none; /* Hidden by default */
-}
-
-@media (max-width: 768px) {
-    .nav-links {
-        display: none; /* Initially hide for mobile */
-        flex-direction: column;
-        width: 100%;
-        background-color: #222;
-        position: absolute;
-        top: 60px; /* Height of the navbar */
-    }
-    
-    .nav-links.show {
-        display: flex; /* Show when toggled */
-    }
-
-    .hamburger {
-        display: flex; /* Show hamburger on mobile */
-        flex-direction: column;
-        cursor: pointer;
-    }
-
-    .hamburger div {
-        width: 30px;
-        height: 3px;
-        background: #fff;
-        margin: 3px 0;
-    }
 }
 
 /* Sign Up Section */
@@ -153,19 +125,64 @@ body {
 }
 
 /* Footer */
-.ftr {
+.footer {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 1em 0;
     margin-top: 20px;
 }
 
-.ftr a {
-    color: #de7c31;
-    text-decoration: none;
-}
-
-.ftr a:hover {
-    text-decoration: underline;
-}
-
-.ftr p {
+.footer p {
+    margin: 0;
     color: #b1cae3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to start */
+    }
+
+    .nav-links {
+        flex-direction: column; /* Stack nav links vertically */
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        margin-left: 0; /* Remove margin for stacked links */
+        margin-bottom: 10px; /* Add some space between links */
+    }
+
+    .sign-up {
+        height: auto; /* Allow content to dictate height */
+        padding: 20px; /* Add some padding */
+    }
+
+    .container {
+        padding: 1em; /* Reduce padding on smaller screens */
+    }
+
+    .container h2 {
+        font-size: 24px; /* Smaller font size for headings */
+    }
+
+    .container p {
+        font-size: 1em; /* Smaller font size for paragraphs */
+    }
+
+    .btn {
+        font-size: 1em; /* Smaller font size for buttons */
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar img {
+        width: 200px; /* Smaller logo for small screens */
+    }
+
+    .container {
+        width: 95%; /* Adjust container width */
+    }
 }

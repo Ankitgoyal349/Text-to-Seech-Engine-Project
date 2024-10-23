@@ -1,8 +1,3 @@
-function toggleMenu() {
-    const navLinks = document.querySelector('.nav-links');
-    navLinks.classList.toggle('show');
-}
-
 document.getElementById("signupForm").addEventListener("submit", function(event) {
     event.preventDefault(); // Prevents the default form submission
 

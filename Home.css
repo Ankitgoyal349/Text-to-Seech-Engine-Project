@@ -8,6 +8,7 @@ body {
     box-sizing: border-box;
     background-color: #f9f9f9;
     color: #333;
+    line-height: 1.6; /* Improved readability */
 }
 
 .navbar {
@@ -102,11 +103,12 @@ body {
     text-decoration: none;
     font-size: 1.2em;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform for button */
 }
 
 .hero .btn:hover {
     background-color: #e55500;
+    transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
 /* Features Section */
@@ -116,11 +118,18 @@ body {
     padding: 3em 5%;
     background-color: #fff;
     text-align: center;
+    overflow-x: auto; /* Allow wrapping of features */
 }
 
 .feature {
-    flex-basis: 30%;
+    flex: 1;
     padding: 1em;
+    max-width: 300px;
+    transition: transform 0.3s; /* Smooth scaling on hover */
+}
+
+.feature:hover {
+    transform: scale(1.05); /* Slight zoom effect */
 }
 
 .feature h2 {
@@ -156,6 +165,7 @@ body {
     display: flex;
     justify-content: space-around;
     gap: 1.5em;
+    flex-wrap: wrap; /* Allow wrapping of steps */
 }
 
 .step {
@@ -244,19 +254,19 @@ body {
     }
 
     .feature, .step {
-        flex-basis: 100%;
+        flex-basis: 100%; /* Full width on small screens */
     }
 
     .hero h1 {
-        font-size: 2.2em;
+        font-size: 2.2em; /* Smaller heading for mobile */
     }
 
     .hero p {
-        font-size: 1.2em;
+        font-size: 1.2em; /* Smaller paragraph for mobile */
     }
 
     .hero .btn {
         font-size: 1em;
-        padding: 0.5em 1em;
+        padding: 0.5em 1em; /* Smaller button */
     }
 }
