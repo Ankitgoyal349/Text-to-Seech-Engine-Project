@@ -39,19 +39,36 @@
             </div>
             <div id="filein" class="inputypes">
                 <h3>Upload a text file!</h3>
-                <input type="file" id="fileInput" class="filein" accept=".txt">
+                <label for="fileInput">
+                    <img  id="inputlogofile" class="inputlogos" src="images/text-editor.png" alt="">
+                </label>
+                <input type="file" id="fileInput" class="fileinput" accept=".txt" style="display: none;">
             </div>
             <div id="imgin" class="inputypes">
-                <h3>Upload text picture!</h3>
-                <input class="imagein" id="imageInput" type="file" accept="image/*" />
+                <h3>Upload picture!</h3>
+                <label for="imageInput">
+                    <img id="inputlogoimage" class="inputlogos" src="images/image-upload-logo.png" alt="">
+                </label>
+                <input class="imagein" id="imageInput" type="file" accept="image/*" style="display: none;" />
             </div> 
         </div>
         
+        <div class="mainbutton">
+            <button id="speechifyButton">Speechify</button>
+        </div>
         
         <div class="speechify-buttons">
-            <button id="speechifyButton">Speechify</button>
-            <button id="downloadButton">Download Speech</button>
-            <button id="stopButton">Stop Speech</button>
+            <label for="downloadButton">
+                <h3 style="margin: 0%;">Download Speech</h3>
+                <img id="downloadspeechlogo" class="uilogos" src="images/arrow.png" alt="Download">
+            </label>
+            <button id="downloadButton" style="display: none;">Download Speech</button>
+
+            <label for="stopButton">
+                <h3 style="margin: 0%;">Stop Speech</h3>
+                <img id="stopspeechlogo" class="uilogos" src="images/stop-speech.png" alt="Stop">
+            </label>
+            <button id="stopButton" style="display: none;">Stop Speech</button>
         </div>
 
         <div id="output"></div>

@@ -92,6 +92,7 @@ body {
     align-items: center; /* Center align */
     height: 20rem;
     justify-content: center;
+    margin-bottom: 2em;
 }
 
 .upload-methods h3 {
@@ -99,20 +100,39 @@ body {
     margin-bottom: 0.5em;
 }
 
+.inputlogos{
+    height: 4em;
+    padding: 0.1em;
+    margin: 0.5em;
+    transition: background-color 0.3s ease, transform 0.3s ease;;
+}
+
+.inputlogos:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+#textInput{
+    height: 7vh;
+    width: 18vh;
+}
+
+
+
 .inputypes{
-    width: 33%; /* Slightly less than 100% to allow padding */
-    height: 12em; /* Fixed height for consistency */
+    width: 30%; /* Slightly less than 100% to allow padding */
+    height: 14em; /* Fixed height for consistency */
     padding: 0.5em;
     border-radius: 10px;
     border: 1px solid #ccc;
     background-color: #ffffff;
     margin: 1em;
+
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
     transition: background-color 0.3s ease, transform 0.3s ease;
     
 }
 .inputypes:hover{
-    transform: scale(1.15);
+    transform: scale(1.1);
 }
 
 
@@ -120,8 +140,10 @@ body {
     display: flex;
     flex-wrap: wrap; /* Allow buttons to wrap */
     justify-content: space-around; /* Space buttons evenly */
-    margin-top: 20px;
+   
 }
+
+
 
 button {
     padding: 10px 20px;
@@ -134,8 +156,34 @@ button {
 }
 
 #speechifyButton {
-    background-color: orange;
+    background-color: #ff6200;
     color: white;
+    font-size: 1.3em;
+    font-weight: bold;
+    border-radius: 2em;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;;
+}
+
+#speechifyButton:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+#downloadspeechlogo{
+    height: 5em;
+    width: 5em;
+}
+
+#stopspeechlogo{
+    height: 5em;
+    width: 5em;
+}
+
+.uilogos:hover{
+    cursor: pointer;
+
+
 }
 
 #speechifyButton:hover {
