@@ -1,4 +1,3 @@
-
 const textInput = document.getElementById('textInput');
 const fileInput = document.getElementById('fileInput');
 const imageInput = document.getElementById('imageInput');
@@ -45,7 +44,7 @@ function speak(text) {
     }
 
     currentUtterance.rate = 1.0; // Set speaking rate
-    currentUtterance.pitch = 1.0; // Set pitch
+    currentUtterance.pitch =2.0; // Set pitch
 
     isSpeaking = true;
     console.log('Speaking:', text); // Log the text being spoken
@@ -74,8 +73,11 @@ speechifyButton.addEventListener('click', () => {
     const textToSpeak = textInput.value;
     if (textToSpeak) {
       speak(textToSpeak);
+
+      // Store the entered text in localStorage 
+      localStorage.setItem('lastTextInput', textToSpeak);
     } else {
-      console.log('Please enter some text.');
+      alert('Please enter some text.');
     }
   } else {
     console.log('Speech is currently in progress. Please stop it before speaking again.');
@@ -176,5 +178,14 @@ stopButton.addEventListener('click', () => {
     console.log('Speech stopped');
   } else {
     console.log('No speech to stop.');
+  }
+});
+
+// Restore the text input from localStorage on page load
+window.addEventListener('load', () => {
+  const savedText = localStorage.getItem('lastTextInput');
+  if (savedText) {
+    textInput.value = savedText; // Restore the saved text in the input field
+    console.log('Restored saved text from localStorage:', savedText);
   }
 });
