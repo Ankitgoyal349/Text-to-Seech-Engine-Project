@@ -54,40 +54,67 @@ body {
     max-width: 90%;
     width: 100%;
     text-align: center;
+    
 }
 
 .techniques h2 {
     font-size: 2.5em;
     margin-bottom: 1.5em;
-    padding: 1em;
+    padding: 0.7em;
     background-color: #ff6200;
     border-radius: 10px;
+    width: 70%;
+    justify-self: center;
 }
 
-.upload-method {
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
     background-color: white;
+}
+
+
+.upload-methods {
+    background-color: rgba(0, 0, 0, 0);
     color: #ff6200;
-    padding: 2em;
-    margin: 1em 0;
-    border-radius: 10px;
+    padding: 1em;
+    border-radius: 2em;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex; /* Use flex to align items nicely */
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: row; /* Stack items vertically */
     align-items: center; /* Center align */
+    height: 20rem;
+    justify-content: center;
 }
 
-.upload-method h3 {
+.upload-methods h3 {
     font-size: 2em;
     margin-bottom: 0.5em;
 }
 
-.txtin {
-    width: 95%; /* Slightly less than 100% to allow padding */
-    height: 100px; /* Fixed height for consistency */
-    padding: 1em;
+.inputypes{
+    width: 33%; /* Slightly less than 100% to allow padding */
+    height: 12em; /* Fixed height for consistency */
+    padding: 0.5em;
     border-radius: 10px;
     border: 1px solid #ccc;
+    background-color: #ffffff;
+    margin: 1em;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    
 }
+.inputypes:hover{
+    transform: scale(1.15);
+}
+
 
 .speechify-buttons {
     display: flex;
