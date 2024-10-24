@@ -25,6 +25,7 @@ body {
 .navbar img {
     width: 200px;
     height: auto;
+    border-radius: 0.2em;
 }
 
 .nav-links {
@@ -44,6 +45,7 @@ body {
 .nav-links a:hover {
     background-color: #575757;
     text-decoration: underline;
+    
 }
 
 .hamburger {
@@ -102,7 +104,7 @@ body {
     color: #fff;
     text-decoration: none;
     font-size: 1.2em;
-    border-radius: 5px;
+    border-radius: .5em;
     transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform for button */
 }
 
@@ -119,17 +121,24 @@ body {
     background-color: #fff;
     text-align: center;
     overflow-x: auto; /* Allow wrapping of features */
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    border-radius: 2em;
 }
 
 .feature {
     flex: 1;
-    padding: 1em;
+    padding: 2em;
     max-width: 300px;
     transition: transform 0.3s; /* Smooth scaling on hover */
 }
 
+
 .feature:hover {
     transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    border-radius: 1.2em;
+    
 }
 
 .feature h2 {
@@ -139,9 +148,15 @@ body {
 }
 
 .feature p {
+    display: block;
     font-size: 1em;
     color: #555;
 }
+
+#featurehead{
+    display: flex;
+    justify-content: center;
+    font-size: 1.2em;}
 
 .feature-icon {
     font-size: 3em;
@@ -206,6 +221,9 @@ body {
     color: #555;
 }
 
+#intro_l2{
+    margin-bottom: 2em;
+}
 .testimonial cite {
     display: block;
     margin-top: 1em;
