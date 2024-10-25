@@ -16,48 +16,47 @@ header {
     z-index: 1000;
 }
 
+/* Navbar */
 .navbar {
-    background-color: #222;
-    color: #fff;
-    padding: 1em 5%; /* Added padding for better alignment */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #222;
+    padding: 1em 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .navbar img {
-    width: 200px;
-    height: auto; /* Changed to auto for better responsiveness */
+    width: 300px;
+    height: auto; /* Maintain aspect ratio */
 }
 
 .nav-links {
-    list-style-type: none;
+    list-style: none;
     display: flex;
-    gap: 1.5em;
+}
+
+.nav-links li {
+    margin-left: 20px;
 }
 
 .nav-links a {
-    color: #fff;
     text-decoration: none;
-    padding: 0.5em;
-    border-radius: 3px;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 36px;
     transition: background-color 0.3s ease;
 }
 
 .nav-links a:hover {
     background-color: #575757;
+    text-decoration: underline;
 }
 
 .hamburger {
-    display: none;
-    cursor: pointer;
-}
-
-.hamburger div {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 4px;
+    display: none; /* Hidden by default */
 }
 
 /* Container */

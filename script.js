@@ -1,3 +1,4 @@
+
 const textInput = document.getElementById('textInput');
 const fileInput = document.getElementById('fileInput');
 const imageInput = document.getElementById('imageInput');
