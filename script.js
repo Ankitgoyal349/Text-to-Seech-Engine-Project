@@ -85,6 +85,7 @@ speechifyButton.addEventListener('click', () => {
   }
 });
 
+
 // Handle file upload and speak its content
 function handleFileUpload(file) {
   const reader = new FileReader();
