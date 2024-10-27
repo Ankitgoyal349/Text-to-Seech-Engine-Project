@@ -18,45 +18,54 @@ header {
 
 /* Navbar */
 .navbar {
+    background-color: #222;
+    padding: 1.5em 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #222;
-    padding: 1em 5%;
     position: sticky;
     top: 0;
     z-index: 1000;
+    
 }
 
 .navbar img {
-    width: 300px;
-    height: auto; /* Maintain aspect ratio */
+    width: 200px;
+    height: auto;
+    border-radius: 0.2em;
 }
 
 .nav-links {
-    list-style: none;
+    list-style-type: none;
     display: flex;
-}
-
-.nav-links li {
-    margin-left: 20px;
+    gap: 1.5em;
 }
 
 .nav-links a {
-    text-decoration: none;
     color: #fff;
-    font-size: 18px;
-    padding: 10px 36px;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 3px;
     transition: background-color 0.3s ease;
 }
 
 .nav-links a:hover {
     background-color: #575757;
     text-decoration: underline;
+    
 }
 
 .hamburger {
-    display: none; /* Hidden by default */
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
 }
 
 /* Container */

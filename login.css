@@ -15,27 +15,26 @@ body {
 /* Navbar */
 .navbar {
     background-color: #222;
-    color: #fff;
-    padding: 1em 5%;
+    padding: 1.5em 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: sticky;
     top: 0;
     z-index: 1000;
+    
 }
 
 .navbar img {
-    width: 300px;
-    height: 50px;
+    width: 200px;
+    height: auto;
+    border-radius: 0.2em;
 }
 
 .nav-links {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     display: flex;
-    gap: 2em;
+    gap: 1.5em;
 }
 
 .nav-links a {
@@ -49,11 +48,22 @@ body {
 .nav-links a:hover {
     background-color: #575757;
     text-decoration: underline;
+    
 }
 
 .hamburger {
-    display: none; /* Hidden by default */
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
 }
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+
 
 @media (max-width: 768px) {
     .nav-links {
