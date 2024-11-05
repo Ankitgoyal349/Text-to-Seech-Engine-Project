@@ -9,13 +9,13 @@ document.getElementById("signupForm").addEventListener("submit", function(event)
 
     // Basic validation
     if (password !== confirmPassword) {
-        alert("Passwords do not match!");
-        return;
+    alert("Passwords do not match!");
+    return;
     }
 
     // For demo purposes, we'll assume success.
     alert("Sign-up successful for " + username + " with email " + email);
-    
-    // Redirect to Text-to-Speech page after successful sign-up
-    window.location.href = "./Text-to-speech.html";
+
+    // Redirect to login page after successful sign-up
+    window.location.href = "login.html";
 });

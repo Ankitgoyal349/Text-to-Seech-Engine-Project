@@ -46,6 +46,7 @@ function speak(text) {
 
     currentUtterance.rate = 1.0; // Set speaking rate
     currentUtterance.pitch =2.0; // Set pitch
+    // currentUtterance.voice=female;
 
     isSpeaking = true;
     console.log('Speaking:', text); // Log the text being spoken
